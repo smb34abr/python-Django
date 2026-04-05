@@ -1,0 +1,4 @@
+# Datos administrativos
+
+userAdmin = abernal
+userPass  = qwerty321
