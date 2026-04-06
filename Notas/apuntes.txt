@@ -2,3 +2,15 @@
 
 userAdmin = abernal
 userPass  = qwerty321
+
+# Conexion en servidor casaos
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test',
+        'USER': 'root',
+        'PASSWORD': 'casaos',
+        'HOST': '192.168.0.19',
+        'PORT': '',
+    }
+}

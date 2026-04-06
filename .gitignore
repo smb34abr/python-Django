@@ -1,9 +1,6 @@
 # Comentario: Ignorar dependencias
 node_modules/
 dist/
-biblioteca/
-notas/
-manage.py
 
 # Comentario: Ignorar variables de entorno
 .env
