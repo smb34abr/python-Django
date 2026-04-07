@@ -1,6 +1,11 @@
 # Comentario: Ignorar dependencias
 node_modules/
 dist/
+__pycahe__
+*.pyc
+#biblioteca/
+#Notas/
+#sistema/
 
 # Comentario: Ignorar variables de entorno
 .env
