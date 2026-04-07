@@ -74,27 +74,27 @@ WSGI_APPLICATION = 'sistema.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'test',
-#        'USER': 'root',
-#        'PASSWORD': '',
-#        'HOST': '127.0.0.1',
-#        'PORT': '',
-#    }
-#}
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
         'USER': 'root',
-        'PASSWORD': 'casaos',
-        'HOST': '192.168.0.19',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
         'PORT': '',
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'test',
+#        'USER': 'root',
+#        'PASSWORD': 'casaos',
+#        'HOST': '192.168.0.19',
+#        'PORT': '',
+#    }
+#}
 
 
 # Password validation

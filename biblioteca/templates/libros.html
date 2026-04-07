@@ -9,6 +9,12 @@
 
 <body>
     <h1>Este es el libros</h1>
+    <div>
+        <ul>
+            {% for libro in libros %}
+                <li>{{ libro.titulo }} - {{ libro.autor }}</li>
+            {% endfor %}
+        </ul>
 </body>
 
 </html>
