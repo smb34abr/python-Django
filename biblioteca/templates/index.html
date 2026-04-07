@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/dataTables.css' %}">
     <link rel="stylesheet" href="{% static 'css/buttons.dataTables.css' %}">
+    <link rel="stylesheet" href="{% static 'css/awesome.all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
 </head>
 
 <body>
@@ -77,21 +80,21 @@
                     </td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                    <th>Actions</th>
+                    <th>Actions</th>
+                    <th>Actions</th>
+                </tr>
+            </table>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     
     <script src="{% static 'js/jquery-3.7.1.js' %}"></script>
     <script src="{% static 'js/dataTables.js' %}"></script>
@@ -102,6 +105,7 @@
     <script src="{% static 'js/vfs_fonts.js' %}"></script>
     <script src="{% static 'js/buttons.html5.min.js' %}"></script>
     <script src="{% static 'js/buttons.print.min.js' %}"></script>
+    <script src="{% static 'js/awesome.all.min.js' %}"></script>
     
     <script>
     let table = new DataTable('#example', {
@@ -127,7 +131,7 @@
             }
         },
         language: {
-            url: '//cdn.datatables.net/plug-ins/2.0.0/i18n/es-MX.json',              
+            url: 'https://cdn.datatables.net/plug-ins/2.0.0/i18n/es-MX.json',              
         },    
     });
 </script>
