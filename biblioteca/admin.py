@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db.models import Sum
-from .models import libro, usuario, escritor
+from .models import libro, usuario, escritor, editorial
 
 
 # Register your models here.
@@ -35,3 +35,8 @@ class usuarioAdmin(admin.ModelAdmin):
 class escritorAdmin(admin.ModelAdmin):
     list_display = ['nombres', 'apellidos', 'nacionalidad', 'fecha_nacimiento', 'fecha_captura']
     search_fields = ['nombres', 'apellidos', 'nacionalidad']
+
+@admin.register(editorial)
+class editorialAdmin(admin.ModelAdmin):
+    list_display = ['nombres', 'especialidad', 'pais']
+    search_fields = ['nombres', 'pais']
