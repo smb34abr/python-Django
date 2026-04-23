@@ -8,6 +8,7 @@ from .models import libro, usuario, escritor, editorial
 class libroAdmin(admin.ModelAdmin):
     list_display = ['isbn', 'titulo', 'escritor', 'editorial', 'fecha_publicacion', 'fecha_captura', 'existencia', 'precio']
     search_fields = ['isbn', 'titulo', 'editorial']
+    date_hierarchy = 'fecha_captura'
 
     # Esta función calcula el total de la columna precio
     def changelist_view(self, request, extra_context=None):
